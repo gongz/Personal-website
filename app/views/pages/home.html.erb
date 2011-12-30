@@ -1,0 +1,100 @@
+<h1>Gong (Archer) Zhang</h1>
+<body>
+<div class="colmask holygrail">
+    <div class="colmid">
+        <div class="colleft">
+            <div class="col1wrap">
+                <div class="col1">
+					<!-- Column 1 start -->
+					<h2>About me</h2>
+                    <p>I'm a student working towards Masters Degree in Information Networking - Mobile Engineering at Carnegie Mellon University. I received my B.S. degree in Computer Science and Engineering from Beihang University in July 2011. </p>
+					<!-- Column 1 end -->
+                </div>
+            </div>
+            <div class="col2">
+				<!-- Column 2 start -->
+                <img id="head" class="shadow" src="images/head.jpg" width="140" height="168" border="0" />
+                <!-- Column 2 end -->
+            </div>
+            <div class="col3">
+				<!-- Column 3 start -->
+                <h2>Contact</h2>
+                <a href="http://www.linkedin.com/in/gongzhang">LinkedIn</a> |
+                <a href="https://github.com/gongz">GitHub</a> |
+                <img src="images/email.jpg" width="140"/>
+                <!-- Column 3 end -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="colmask blogstyle">
+    <div class="colmid">
+        <div class="colleft">
+            <div class="col1wrap">
+                <div id="col1" class="col1">
+					<!-- Column 1 start -->
+					<h2>Open Source Projects</h2>
+                    <ul>
+                    <li><a href="http://nand.bicoup.com" id="nand"
+                    title="Flash-Optimized Storage for Time-Series Sensing Data on Sensor Platforms">NAND Flash Driver on Sensors</a></li>
+                    <li><a href="http://bestbay.herokuapp.com/" id="bestbay"
+                    title="Ruby on Rails C2C Website">BestBay</a></li>
+                    </ul>
+
+            		<!-- Column 1 end -->
+                </div>
+            </div>
+            <div class="col2">
+				<!-- Column 2 start -->
+                <h2></h2>
+				<!-- Column 2 end -->
+
+            </div>
+            <div class="col3">
+				<!-- Column 3 start -->
+                <h2>My CV</h2>
+                  <ul>
+                  <li>CV in <a href="https://s3.amazonaws.com/sepersonal_test/CV_GongZhang_a.pdf">PDF</a> |</li>
+                  </ul>
+				<!-- Column 3 end -->
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="colmask leftmenu">
+    <div class="colright">
+        <div class="col1wrap">
+            <div id='more' class="col1">
+                <!-- Column 2 start -->
+                <h2>More</h2>
+                <!-- Column 2 end -->
+            </div>
+        </div>
+        <div class="col2">
+            <!-- Column 1 start -->
+            <h2></h2>
+            <!-- Column 1 end -->
+        </div>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+$('#nand').mouseover(function(){
+   $("#more").load("nand.htm");
+   $("#more").css('background',"#EEEEEE");
+
+   return false;
+});
+$('#bestbay').mouseover(function(){
+   $("#more").load("bestbay.htm");
+   $("#more").css('background',"#E5EECC");
+   return false;
+});
+$('#head').mouseover(function(){
+   $("#more").load("about.htm");
+   $("#more").css('background',"#EEEEEE");
+   return false;
+});
+</script>
