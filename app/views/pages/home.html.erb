@@ -68,13 +68,58 @@
         <div class="col1wrap">
             <div id='more' class="col1">
                 <!-- Column 2 start -->
-                <h2>More</h2>
+                <h2></h2>
                 <!-- Column 2 end -->
             </div>
         </div>
         <div class="col2">
             <!-- Column 1 start -->
-            <h2></h2>
+            <h2>Gallery</h2>
+           <div id="s3slider">
+            <ul id="s3sliderContent">
+              <li class="s3sliderImage">
+                <%= link_to image_tag("images/nand_1.jpg"),"assets/images/nand_1.jpg",:popup => true  %>
+                <span>Logic Analyzer Connected with MicaZ</span>
+              </li>
+              <li class="s3sliderImage">
+                <%= link_to image_tag("images/nand_2.jpg"),"assets/images/nand_2.jpg",:popup => true %>
+                <span>Debugging System</span>
+              </li>
+              <li class="s3sliderImage">
+                <%= link_to image_tag("images/nand_3.jpg"),"assets/images/nand_3.jpg",:popup => true %>
+                <span>NAND flash board</span>
+              </li>
+              <li class="s3sliderImage">
+                <%= link_to image_tag("images/nand_4.jpg"),"assets/images/nand_4.jpg",:popup => true %>
+                <span>Expansion board</span>
+              </li>
+              <li class="s3sliderImage">
+                <%= link_to image_tag("images/nand_5.jpg"),"assets/images/nand_5.jpg",:popup => true %>
+                <span>MicaZ, NAND flash, expansion board and MIB510</span>
+              </li>
+              <li class="s3sliderImage">
+                 <%= link_to image_tag("images/nand_6.jpg"),"assets/images/nand_6.jpg",:popup => true %>
+                <span>Welded back of the energy test board</span>
+              </li>
+              <li class="s3sliderImage">
+                 <%= link_to image_tag("images/nand_7.jpg"),"assets/images/nand_7.jpg",:popup => true %>
+                <span>Front of the energy test board</span>
+              </li>
+              <li class="s3sliderImage">
+                 <%= link_to image_tag("images/nand_8.png"),"assets/images/nand_8.png",:popup => true %>
+                <span>Storage Structure</span>
+              </li>
+              <li class="s3sliderImage">
+                 <%= link_to image_tag("images/nand_9.png"),"assets/images/nand_9.png",:popup => true %>
+                <span>Logic analyzer debugging</span>
+              </li>
+              <li class="s3sliderImage">
+                <%= link_to image_tag("images/nand_10.jpg"),"assets/images/nand_10.jpg",:popup => true %>
+                <span>UART debugging</span>
+              </li>
+              <div class="clear s3sliderImage"></div>
+            </ul>
+          </div>
             <!-- Column 1 end -->
         </div>
     </div>
@@ -84,18 +129,44 @@
 <script type="text/javascript">
   $('#nand').mouseover(function(){
    $("#more").load("nand.htm");
-   $("#more").css('background',"#EEEEEE");
+
 
    return false;
 });
 $('#bestbay').mouseover(function(){
    $("#more").load("bestbay.htm");
-   $("#more").css('background',"#E5EECC");
+
    return false;
 });
 $('#head').mouseover(function(){
    $("#more").load("about.htm");
-   $("#more").css('background',"#EEEEEE");
+
    return false;
 });
+
+
+$(document).ready(function() {
+      // Main Ads Slider
+      $('#s3slider').s3Slider({
+          timeOut: 4000
+      });
+
+      // Item Gallery
+      $('#items_gallery').carouFredSel({
+          prev : {
+              button: "#gallery_prev",
+              key: "left"
+          },
+          next : {
+              button: "#gallery_next",
+              key: "right"
+          },
+          scroll : {
+              items: 1,
+              duration: 500,
+              pauseOnHover: true
+          },
+          pagination: "#gallery_pag"
+      });
+  });
 </script>

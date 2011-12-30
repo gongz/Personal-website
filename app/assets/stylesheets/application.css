@@ -211,10 +211,10 @@
 	    background:#EEEEEE;
 	}
 	.leftmenu .colright {
-        float:left;
+
         width:200%;
 		position:relative;
-		left:200px;
+		left:250px;
         background:#fff;
     }
     .leftmenu .col1wrap {
@@ -225,18 +225,18 @@
 	    padding-bottom:1em;
 	}
 	.leftmenu .col1 {
-        margin:0 15px 0 215px;
-
+        margin:20px 15px 0 215px;
         position:relative;
         right:100%;
 	    overflow: auto;
 	}
     .leftmenu .col2 {
         float:left;
-        width:170px;
-        height:300px;
+        width:350px;
+        height:330px;
         position:relative;
         right:185px;
+        margin:0 -50px
     }
     /* 2 column right menu settings */
 	.rightmenu {
@@ -293,5 +293,59 @@
         -moz-box-shadow: 5px 5px 5px black;
         -webkit-box-shadow: 5px 5px 5px black;
         box-shadow: 5px 5px 5px black;
+    }
+
+
+#s3slider {
+    width: 347px; /* important to be same as image width */
+    height: 346px; /* important to be same as image height */
+    position: relative; /* important */
+    overflow: hidden; /* important */
+    margin: 0 -50px;
+}
+    //Gallery
+    #s3sliderContent {
+        width: 250px; /* important to be same as image width or wider */
+        position: relative; /* important */
+        top: 0; /* important */
+        margin-left: 0; /* important */
+        padding: 0;
+    }
+
+    .s3sliderImage {
+        float: left; /* important */
+        position: relative; /* important */
+        display: none; /* important */
+    }
+
+    .s3sliderImage img {
+        width: 220px;
+    }
+
+    .s3sliderImage span {
+        position: absolute; /* important */
+        left: 5px;
+        font: 12px/25px Arial, Helvetica, sans-serif;
+        padding: 0px 15px;
+        width: 190px;
+        background-color: #000;
+        filter: alpha(opacity=70); /* here you can set the opacity of box with text */
+        -moz-opacity: 0.7; /* here you can set the opacity of box with text */
+        -khtml-opacity: 0.7; /* here you can set the opacity of box with text */
+        opacity: 0.7; /* here you can set the opacity of box with text */
+        color: #fff;
+        display: none; /* important */
+        top: 5px;
+
+       /*
+           if you put
+           top: 0; -> the box with text will be shown at the top of the image
+           if you put
+           bottom: 0; -> the box with text will be shown at the bottom of the image
+       */
+    }
+
+    .clear {
+        clear: both;
     }
 	/* --> */
