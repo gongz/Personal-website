@@ -1,4 +1,3 @@
-
 <h1>Gong (Archer) Zhang</h1>
 <body>
 <div class="colmask holygrail">
@@ -48,6 +47,7 @@
             <div class="col2">
 				<!-- Column 2 start -->
                 <h2></h2>
+                <div id="clustrmaps-widget"></div>
 				<!-- Column 2 end -->
 
             </div>
@@ -124,29 +124,30 @@
         </div>
     </div>
 </div>
+
 </body>
 
 
 <script type="text/javascript">
-  $('#nand').mouseover(function(){
-   $("#more").load("nand.htm");
+    $('#nand').mouseover(function(){
+    $("#more").load("nand.htm");
 
 
-   return false;
-});
-$('#bestbay').mouseover(function(){
-   $("#more").load("bestbay.htm");
+    return false;
+    });
+    $('#bestbay').mouseover(function(){
+    $("#more").load("bestbay.htm");
 
-   return false;
-});
-$('#head').mouseover(function(){
-   $("#more").load("about.htm");
+    return false;
+    });
+    $('#head').mouseover(function(){
+    $("#more").load("about.htm");
 
-   return false;
-});
+    return false;
+    });
 
 
-$(document).ready(function() {
+    $(document).ready(function() {
       // Main Ads Slider
       $('#s3slider').s3Slider({
           timeOut: 4000
@@ -169,5 +170,16 @@ $(document).ready(function() {
           },
           pagination: "#gallery_pag"
       });
-  });
+    });
+
+    //  web tracker
+    var _clustrmaps = {'url' : 'http://archerzhang.herokuapp.com', 'user' : 968760, 'server' : '3', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2011-12-31', 'lang' : 'en', 'corners' : 'square' };
+    (function (){
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://www3.clustrmaps.com/counter/map.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    })();
 </script>

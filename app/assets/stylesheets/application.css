@@ -348,4 +348,10 @@
     .clear {
         clear: both;
     }
+
+    /*web tracker*/
+    #clustrmaps-widget
+    {
+        display: none;
+    }
 	/* --> */
