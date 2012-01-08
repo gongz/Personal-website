@@ -41,6 +41,10 @@
                     title="Ruby on Rails C2C Website">BestBay</a></li>
                     <li><a href="https://github.com/gongz/minesweeper" id="minesweeper"
                     title="Minesweeper cracker for win7">Minesweeper</a></li>
+                    <li><a href="https://s3.amazonaws.com/sepersonal_test/executable/ChineseChess.zip" id="chess"
+                    title="3D Chinese Chess Game">3D Chinese Chess</a></li>
+                    <li><a href="https://s3.amazonaws.com/sepersonal_test/executable/iDLE_Beta_version.zip" id="volume"
+                    title="Windows Gadget">Volume Control, Event Reminder, Screenshot</a></li>
                     </ul>
             		<!-- Column 1 end -->
                 </div>
@@ -82,6 +86,17 @@
                 <%= link_to image_tag("https://s3.amazonaws.com/sepersonal_test/executable/minesweeper.png"),"https://s3.amazonaws.com/sepersonal_test/executable/minesweeper.png" %>
                 <span>Win7 Minesweeper Cracker</span>
               </li>
+
+              <li class="s3sliderImage">
+                <%= link_to image_tag("https://s3.amazonaws.com/sepersonal_test/images/chess.jpg"),"https://s3.amazonaws.com/sepersonal_test/images/chess.jpg" %>
+                <span>3D Chinese Chess</span>
+              </li>
+
+              <li class="s3sliderImage">
+                <%= link_to image_tag("https://s3.amazonaws.com/sepersonal_test/images/gaget.jpg"),"https://s3.amazonaws.com/sepersonal_test/images/gaget.jpg" %>
+                <span>Windows Gadget</span>
+              </li>
+
               <li class="s3sliderImage">
                 <%= link_to image_tag("https://s3.amazonaws.com/sepersonal_test/images/nand_1_t.jpg"),"https://s3.amazonaws.com/sepersonal_test/images/nand_1.jpg" %>
                 <span>Logic Analyzer Connected with MicaZ</span>
@@ -153,6 +168,18 @@
 
     $('#minesweeper').mouseover(function(){
     $("#more").load("minesweeper.htm");
+
+    return false;
+    });
+
+    $('#chess').mouseover(function(){
+    $("#more").load("chess.htm");
+
+    return false;
+    });
+
+    $('#volume').mouseover(function(){
+    $("#more").load("volume.htm");
 
     return false;
     });
