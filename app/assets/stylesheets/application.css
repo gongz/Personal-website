@@ -3,7 +3,7 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
- *= require_tree . 
+ *= require_tree .
 */
  /* <!-- */
     /* General styles */
@@ -15,9 +15,10 @@
         background:#fff;
         min-width:600px;    /* Minimum width of layout - remove line if not required */
 							/* The min-width property does not work in old versions of Internet Explorer */
-		font-size:90%;
+		font-size:62.5%;
     }
 	a {
+        font-size: 1.5em;
     	color:#369;
 	}
 	a:hover {
@@ -25,18 +26,28 @@
 		background:#369;
 		text-decoration:none;
 	}
-    h1, h2, h3 {
+    h1{
+        font-size: 3em;
+        margin:.8em 0 .2em 0;
+        padding:0;
+    }
+    h2{
+        font-size: 2.3em;
+        margin:.8em 0 .2em 0;
+        padding:0;
+    }
+    h3 {
         margin:.8em 0 .2em 0;
         padding:0;
     }
     p {
         margin:.4em 0 .8em 0;
+        font-size: 1.6em;
         padding:0;
     }
-	img {
-		margin:5px 5px;
-	}
-	/* Header styles */
+    li {
+      font-size: 1.2em;
+    }
     #header {
         clear:both;
         float:left;
@@ -111,6 +122,7 @@
 	/* holy grail 3 column settings */
 	.holygrail {
 	    background:#E5EECC;    	/* Right column background colour */
+
 	}
     .holygrail .colmid {
         float:left;
